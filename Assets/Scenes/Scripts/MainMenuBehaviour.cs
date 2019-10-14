@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuBehaviour : MonoBehaviour
 {
@@ -16,8 +17,9 @@ public class MainMenuBehaviour : MonoBehaviour
         
     }
 
-    void Button__LevelTest__OnClick() {
-
+    public void Button__LevelTest__OnClick() {
+        Debug.Log("Loading scene LevelTest.");
+        SceneManager.LoadScene("LevelTest", LoadSceneMode.Single);
     }
 
     public void Button__Quit__OnClick() {
