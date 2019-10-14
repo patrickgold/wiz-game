@@ -17,12 +17,17 @@ public class MainMenuBehaviour : MonoBehaviour
         
     }
 
-    public void Button__LevelTest__OnClick() {
+    public void LevelTestButton__OnClick() {
         Debug.Log("Loading scene LevelTest.");
         SceneManager.LoadScene("LevelTest", LoadSceneMode.Single);
     }
 
-    public void Button__Quit__OnClick() {
+    public void SettingsButton__OnClick() {
+        Debug.Log("Loading scene Settings.");
+        SceneManager.LoadScene("Settings", LoadSceneMode.Single);
+    }
+
+    public void QuitButton__OnClick() {
         // Save game data
 
         // Close application
